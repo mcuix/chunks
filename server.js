@@ -1,5 +1,6 @@
 const express       =    require("express")
 const fs            =    require("fs")
+const port          =    3001
 
 const app = express();
 
@@ -23,7 +24,6 @@ app.get('/',(req,res)=>{
                    res.end(err);
             });
             return;
-            //retrun out of everything
         }
         
         var positions = range.replace(/bytes=/, "").split("-");
@@ -49,8 +49,6 @@ app.get('/',(req,res)=>{
     });
  });
 
-
-const PORT = 3001
-app.listen(PORT,()=>{
-    console.log("Our server is running"+" "+PORT);
+app.listen(port,()=>{
+    console.log("Our server is running"+" "+port);
 })
