@@ -3,4 +3,5 @@
 
 - Fetch list of videos from mysql table.
 - Stream as chunks using Node.js and Express.
+- Videos displayed as simple list.
 
